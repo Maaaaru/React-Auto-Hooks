@@ -3,7 +3,7 @@
 	"displayName": "React-Auto-Hooks",
 	"description": "React Hooks Expansion",
 	"author": "maaaaru",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "maaaaru",
 	"repository": {
 		"type": "git",
@@ -29,6 +29,12 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "React-Auto-Hooks.helloWorld",
+				"title": "Hello World"
+			}
+		],
 		"snippets": [
 			{
 				"language": "javascript",
