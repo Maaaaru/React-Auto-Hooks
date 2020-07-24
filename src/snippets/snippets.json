@@ -2,15 +2,120 @@
   "useState": {
     "prefix": "ust",
     "body": ["const [${1}, set${2}] = useState(${3});$0"],
-    "description": "useState"
+    "description": " This is useState hook"
   },
   "useEffect": {
-    "prefix": "uef",
+    "prefix": "uff",
     "body": [
       "useEffect(() => {",
-        "${1}",
+        "\t${1}",
       "}, [${2}]);$0"
     ],
-    "description": "useEffect"
+    "description": "This is useEffect hook"
+  },
+  "useContext": {
+    "prefix": "uct",
+    "body": [
+      "const ${1} = useContext(${2});$0"
+    ],
+    "description": "This is useContext hook"
+  },
+  "useRef": {
+    "prefix": "urf",
+    "body": [
+      "const ${1} = useRef(${2});$0"
+    ],
+    "description": "This is useRef hook"
+  },
+  "useReducer": {
+    "prefix": "urd",
+    "body": [
+      "const [${1}state, ${2}dispatch] = useReducer(${3}, ${4});$0"
+    ],
+    "description": "This is useReducer hook"
+  },
+  "useMemo": {
+    "prefix": "umo",
+    "body": [
+      "const ${1} = useMemo(() => {",
+          "\t${2}",
+      "}, [${3}]);$0"
+    ],
+    "description": "This is useMemo hook"
+  },
+  "useCallback": {
+		"prefix": "ucb",
+		"body": [
+      "const ${1} = useCallback(() => {",
+        "\t${2}",
+      "}, [${3}]);$0"
+		],
+		"description": "This is useCallback hook"
+  },
+  "useImperativeHandle": {
+    "prefix": "uih",
+    "body": [
+      "useImperativeHandle(${1}, () => {",
+        "\t${2}",
+      "}, [${3}]);$0"
+    ],
+    "description": "This is useImperativeHandle hook"
+  },
+  "arrowFunction": {
+    "prefix": "arr",
+    "body": [
+      "const ${1} = () => {${2}};$0"
+    ],
+    "description": "This is arrow function"
+  },
+  "ifSentence": {
+    "prefix": "ifs",
+    "body": [
+      "if (${1}) {",
+        "\t${2}",
+      "}$0"
+    ],
+    "description": "This is 'if' sentence"
+  },
+  "elseIfSentence": {
+    "prefix": "eli",
+    "body": [
+      " else if (${1}) {",
+        "\t${2}",
+      "}$0"
+    ],
+    "description": "This is 'else if' sentence"
+  },
+  "elseSentence": {
+    "prefix": "els",
+    "body": [
+      "else {",
+        "\t${1}",
+      "}$0"
+    ],
+    "description": "This is 'else' sentence"
+  },
+  "exportDefault": {
+    "prefix": "exd",
+    "body": [
+      "export default ${1};$0"
+    ],
+    "description": "This is 'export default' sentence"
+  },
+  "exportDefaultAs": {
+    "prefix": "eda",
+    "body": [
+      "export { default as ${1} } from '${2}'"
+    ],
+    "description": "This is 'export default as' sentence"
+  },
+  "styledComponent": {
+    "prefix": "sty",
+    "body": [
+      "const Styled${1} = styled.${2}`",
+        "\t${3}",
+      "`;"
+    ],
+    "description": "This is styled-component sentence"
   }
 }
