@@ -33,7 +33,7 @@
 ## Example
 -- ust(useState)
 
-\t```
+```
 const [ , ] = useState(); 
 
 ```
