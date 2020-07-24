@@ -7,38 +7,41 @@
 ![stars-number](https://img.shields.io/github/stars/Maaaaru/React-Auto-Hooks)
 ![license-info](https://img.shields.io/github/license/Maaaaru/React-Auto-Hooks)
 
+## Supported OS
+only MacOS
+
 ## Supported Language
 * Typescript
 * Javascript 
 
 ## Snippets List
-|Prefix|Snippet|
-|:--:|:--:|
-|ust|useState|
-|uff|useEffect|
-|uct|useContext|
-|urf|useRef|
-|urd|useReducer|
-|umo|useMemo|
-|ucb|useCallback|
-|uih|useImperativeHandle|
-|arr|arrow-function|
-|ifs|'if' statement|
-|eli|'else if' statement|
-|els|'else' statement|
-|exd|'export default' statement|
-|eda|'export default as' statement|
-|sty|'styled-component' statement|
+|Prefix|Command|Snippet|
+|:--:|:--:|:--:|
+|ust|shift+cmd+u|useState|
+|uff|shift+cmd+f|useEffect|
+|uct|shift+cmd+c|useContext|
+|urf|shift+cmd+r|useRef|
+|urd|shift+cmd+d|useReducer|
+|umo|shift+cmd+m|useMemo|
+|ucb|shift+cmd+b|useCallback|
+|uih|shift+cmd+i|useImperativeHandle|
+|arr|coming soon...|arrow-function|
+|ifs|coming soon...|'if' statement|
+|eli|coming soon...|'else if' statement|
+|els|coming soon...|'else' statement|
+|exd|coming soon...|'export default' statement|
+|eda|coming soon...|'export default as' statement|
+|sty|coming soon...|'styled-component' statement|
 
 ## Example
-# -- ust (useState)
+# -- ust or shift+cmd+u (useState)
 
 ```
 const [ , ] = useState(); 
 
 ```
 
-# --uff (useEffect)
+# --uff or shift+cmd+f (useEffect)
 
 ```
 useEffect(() => {
@@ -47,14 +50,14 @@ useEffect(() => {
 
 ```
 
-# --urd (useReducer)
+# --urd or shift+cmd+d (useReducer)
 
 ```
 const [state, dispatch] = useReducer( , );
 
 ```
 
-# --uih (useImperativeHandle)
+# --uih or shift+cmd+i (useImperativeHandle)
 
 ```
 useImperativeHandle( , () => {
