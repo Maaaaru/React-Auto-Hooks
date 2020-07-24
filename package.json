@@ -29,6 +29,12 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "React-Auto-Hooks.helloWorld",
+				"title": "Hello World"
+			}
+		],
 		"snippets": [
 			{
 				"language": "javascript",
