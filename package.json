@@ -3,7 +3,7 @@
 	"displayName": "React-Auto-Hooks",
 	"description": "React Hooks Expansion",
 	"author": "maaaaru",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"publisher": "maaaaru",
 	"repository": {
 		"type": "git",
@@ -25,16 +25,16 @@
 		"hooks"
 	],
 	"main": "./out/extension.js",
-		"activationEvents": [
-			"onCommand:extension.useState",
-			"onCommand:extension.useEffect",
-			"onCommand:extension.useContext",
-			"onCommand:extension.useRef",
-			"onCommand:extension.useReducer",
-			"onCommand:extension.useMemo",
-			"onCommand:extension.useCallback",
-			"onCommand:extension.useImperativeHandle"
-		],
+	"activationEvents": [
+		"onCommand:extension.useState",
+		"onCommand:extension.useEffect",
+		"onCommand:extension.useContext",
+		"onCommand:extension.useRef",
+		"onCommand:extension.useReducer",
+		"onCommand:extension.useMemo",
+		"onCommand:extension.useCallback",
+		"onCommand:extension.useImperativeHandle"
+	],
 	"contributes": {
 		"commands": [
 			{
@@ -72,9 +72,9 @@
 		],
 		"keybindings": [
 			{
-					"command": "extension.useState",
-					"mac": "shift+cmd+u",
-					"when": "editorTextFocus"
+				"command": "extension.useState",
+				"mac": "shift+cmd+u",
+				"when": "editorTextFocus"
 			},
 			{
 				"command": "extension.useEffect",
