@@ -40,19 +40,19 @@
 				"language": "javascript",
 				"path": "./src/snippets/snippets.json"
 			},
-      {
-        "language": "javascriptreact",
-        "path": "./src/snippets/snippets.json"
-      },
+			{
+				"language": "javascriptreact",
+				"path": "./src/snippets/snippets.json"
+			},
 			{
 				"language": "typescript",
 				"path": "./src/snippets/snippets.json"
 			},
-      {
-        "language": "typescriptreact",
-        "path": "./src/snippets/snippets.json"
-      }
-    ]
+			{
+				"language": "typescriptreact",
+				"path": "./src/snippets/snippets.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
