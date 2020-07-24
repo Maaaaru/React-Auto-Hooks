@@ -32,6 +32,10 @@
 
 ## Example
 -- ust(useState)
-```const [ , ] = useState(); ```
+
+\t```
+const [ , ] = useState(); 
+
+```
 
 
