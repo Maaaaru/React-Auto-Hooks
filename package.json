@@ -24,23 +24,27 @@
 		"react native",
 		"hooks"
 	],
+	"activationEvents": [
+		"onCommand:React-Auto-Hooks.helloWorld"
+	],
+		"main": "./out/extension.js",
 	"contributes": {
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./snippets/snippets.json"
+				"path": "./src/snippets/snippets.json"
 			},
 			{
         "language": "javascriptreact",
-        "path": "./snippets/snippets.json"
+        "path": "./src/snippets/snippets.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/snippets.json"
+        "path": "./src/snippets/snippets.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/snippets.json"
+        "path": "./src/snippets/snippets.json"
       }
 		]
 	},
