@@ -32,7 +32,7 @@
 		"commands": [
 			{
 				"command": "React-Auto-Hooks.helloWorld",
-				"title": "Hello World"
+				"title": "Hello"
 			}
 		],
 		"snippets": [
