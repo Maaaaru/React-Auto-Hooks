@@ -1,6 +1,4 @@
 out
 node_modules
 .vscode-test/
-/tasks.json
-/settings.json
 *.vsix
