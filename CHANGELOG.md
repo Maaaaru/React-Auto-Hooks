@@ -7,6 +7,18 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 ## [1.0.1] - 2020-07-24
+### Added
+--コマンド入力にてhooksを挿入できるように
+
+## [1.0.3] - 2020-07-24
+### Fixed
+--バグ対応
+
+## [1.0.2] - 2020-07-24
+### Fixed
+--バグ対応
+
+## [1.0.1] - 2020-07-24
 ### Fixed
 --スニペットが起動しないバグ修正
 
