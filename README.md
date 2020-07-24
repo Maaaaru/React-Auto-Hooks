@@ -30,4 +30,8 @@
 |eda|'export default as' statement|
 |sty|'styled-component' statement|
 
+## Example
+-- ust(useState)
+```const [ , ] = useState(); ```
+
 
