@@ -2,6 +2,9 @@
 
 ![React-Auto-Hooks-Logo](https://github.com/Maaaaru/React-Auto-Hooks/blob/develop/images/logo.png)
 
+![issue-logo](https://img.shields.io/github/issues/Maaaaru/React-Auto-Hooks)
+![forks-num](https://img.shields.io/github/forks/Maaaaru/React-Auto-Hooks)
+
 ## Supported Language
 * Typescript
 * Javascript 
