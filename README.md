@@ -31,10 +31,65 @@
 |sty|'styled-component' statement|
 
 ## Example
--- ust(useState)
+# -- ust (useState)
 
 ```
 const [ , ] = useState(); 
+
+```
+
+# --uff (useEffect)
+
+```
+useEffect(() => {
+
+}, []);
+
+```
+
+# --urd (useReducer)
+
+```
+const [state, dispatch] = useReducer( , );
+
+```
+
+# --uih (useImperativeHandle)
+
+```
+useImperativeHandle( , () => {
+
+}, []);
+
+```
+
+# --arr (arrow-function)
+
+```
+() => {};
+
+```
+
+# --exd (export default)
+
+```
+export default ;
+
+```
+
+# --eda (export default as ...)
+
+```
+export {default as } from '';
+
+```
+
+# --sty (styled-component)
+
+```
+const Styled = style.`
+
+`;
 
 ```
 
