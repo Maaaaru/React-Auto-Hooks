@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.1] - 2020-07-24
+### Fixed
+--スニペットが起動しないバグ修正
+
 ## [1.0.0] - 2020-07-24
 ### Added
 -- React用のスニペットを追加(useState, useEffect, useContext, useRef, useReducer, useMemo, useCallback, useImperativeHandle ...etc)
