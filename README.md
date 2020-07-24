@@ -8,7 +8,7 @@
 ![license-info](https://img.shields.io/github/license/Maaaaru/React-Auto-Hooks)
 
 ## Supported OS
--- only MacOs
+only MacOS
 
 ## Supported Language
 * Typescript
