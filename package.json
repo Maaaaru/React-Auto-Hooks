@@ -19,6 +19,12 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./src/snippets/snippets.json"
+			}
+		],
 		"commands": [
 			{
 				"command": "React-Auto-Hooks.helloWorld",
