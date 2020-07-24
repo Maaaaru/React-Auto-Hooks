@@ -2,7 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-const insertText = (val: any) => {
+const addHooks = (val: any) => {
 	const editor = vscode.window.activeTextEditor;
 
 	if (!editor) {
@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		insertText('const [,] = useState();');
+		addHooks('const [,] = useState();');
 
 	});
 
@@ -41,7 +41,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		insertText('useEffect(() => {}, []);');
+		addHooks('useEffect(() => {}, []);');
 
 	});
 	
@@ -51,7 +51,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		insertText('const  = useContext();');
+		addHooks('const  = useContext();');
 
 	});
 	
@@ -61,7 +61,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		insertText('const  = useRef();');
+		addHooks('const  = useRef();');
 
 	});
 	
@@ -73,7 +73,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		insertText('const [state, dispatch] = useReducer( , );');
+		addHooks('const [state, dispatch] = useReducer( , );');
 
 	});
 	
@@ -83,7 +83,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		insertText('const  = useMemo(() => {}, []);');
+		addHooks('const  = useMemo(() => {}, []);');
 
 	});
 	
@@ -93,7 +93,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		insertText('const  = useCallback(() => {}, []);');
+		addHooks('const  = useCallback(() => {}, []);');
 
 	});
 	
@@ -103,7 +103,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		insertText('useImperativeHandle( , () => {}, []);');
+		addHooks('useImperativeHandle( , () => {}, []);');
 
 	});
 	
