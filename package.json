@@ -24,15 +24,92 @@
 		"react native",
 		"hooks"
 	],
-	"activationEvents": [
-		"onCommand:React-Auto-Hooks.helloWorld"
-	],
 	"main": "./out/extension.js",
+		"activationEvents": [
+			"onCommand:extension.useState",
+			"onCommand:extension.useEffect",
+			"onCommand:extension.useContext",
+			"onCommand:extension.useRef",
+			"onCommand:extension.useReducer",
+			"onCommand:extension.useMemo",
+			"onCommand:extension.useCallback",
+			"onCommand:extension.useImperativeHandle"
+		],
 	"contributes": {
 		"commands": [
 			{
-				"command": "React-Auto-Hooks.helloWorld",
-				"title": "Hello"
+				"command": "extension.useState",
+				"title": "ust"
+			},
+			{
+				"command": "extension.useEffect",
+				"title": "uff"
+			},
+			{
+				"command": "extension.useContext",
+				"title": "uct"
+			},
+			{
+				"command": "extension.useRef",
+				"title": "urf"
+			},
+			{
+				"command": "extension.useReducer",
+				"title": "urd"
+			},
+			{
+				"command": "extension.useMemo",
+				"title": "umo"
+			},
+			{
+				"command": "extension.useCallback",
+				"title": "ucb"
+			},
+			{
+				"command": "extension.useImperativeHandle",
+				"title": "uih"
+			}
+		],
+		"keybindings": [
+			{
+					"command": "extension.useState",
+					"mac": "shift+cmd+u",
+					"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.useEffect",
+				"mac": "shift+cmd+f",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.useContext",
+				"mac": "shift+cmd+c",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.useRef",
+				"mac": "shift+cmd+r",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.useReducer",
+				"mac": "shift+cmd+d",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.useMemo",
+				"mac": "shift+cmd+m",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.useCallback",
+				"mac": "shift+cmd+b",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.useImperativeHandle",
+				"mac": "shift+cmd+i",
+				"when": "editorTextFocus"
 			}
 		],
 		"snippets": [
