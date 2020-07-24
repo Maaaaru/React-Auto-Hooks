@@ -2,7 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-const addHooks = (val: any) => {
+const addHooks = (val: string) => {
 	const editor = vscode.window.activeTextEditor;
 
 	if (!editor) {
@@ -23,45 +23,61 @@ const addHooks = (val: any) => {
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "React-Auto-Hooks" is now active!');
+	const editor = vscode.window.activeTextEditor;
+	const currentPosition = editor?.selection.active as vscode.Position;
 
 	const addUseState = vscode.commands.registerCommand('extension.useState', () => {
-		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
-		addHooks('const [,] = useState();');
+		addHooks('const [,set] = useState();');
+
+		const positionClone = currentPosition.with(currentPosition.line, 7);
+    const  newPosition = new vscode.Selection(positionClone, positionClone);
+		
+		editor.selection = newPosition;
 
 	});
 
 	context.subscriptions.push(addUseState);
 
 	const addUseEffect = vscode.commands.registerCommand('extension.useEffect', () => {
-		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
 		addHooks('useEffect(() => {}, []);');
 
+		const positionClone = currentPosition.with(currentPosition.line, 17);
+    const  newPosition = new vscode.Selection(positionClone, positionClone);
+		
+		editor.selection = newPosition;
+
 	});
-	
+
+
 	context.subscriptions.push(addUseEffect);
 
 	const addUseContext = vscode.commands.registerCommand('extension.useContext', () => {
-		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
 		addHooks('const  = useContext();');
+
+		const positionClone = currentPosition.with(currentPosition.line, 6);
+    const  newPosition = new vscode.Selection(positionClone, positionClone);
+		
+		editor.selection = newPosition;
 
 	});
 	
 	context.subscriptions.push(addUseContext);
 
 	const addUseRef = vscode.commands.registerCommand('extension.useRef', () => {
-		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
 		addHooks('const  = useRef();');
+
+		const positionClone = currentPosition.with(currentPosition.line, 6);
+    const  newPosition = new vscode.Selection(positionClone, positionClone);
+		
+		editor.selection = newPosition;
 
 	});
 	
@@ -70,40 +86,56 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(addUseContext);
 
 	const addUseReducer = vscode.commands.registerCommand('extension.useReducer', () => {
-		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
 		addHooks('const [state, dispatch] = useReducer( , );');
+
+		const positionClone = currentPosition.with(currentPosition.line, 7);
+    const  newPosition = new vscode.Selection(positionClone, positionClone);
+		
+		editor.selection = newPosition;
 
 	});
 	
 	context.subscriptions.push(addUseReducer);
 
 	const addUseMemo = vscode.commands.registerCommand('extension.useMemo', () => {
-		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
 		addHooks('const  = useMemo(() => {}, []);');
+
+		const positionClone = currentPosition.with(currentPosition.line, 6);
+    const  newPosition = new vscode.Selection(positionClone, positionClone);
+		
+		editor.selection = newPosition;
 
 	});
 	
 	context.subscriptions.push(addUseMemo);
 
 	const addUseCallback = vscode.commands.registerCommand('extension.useCallback', () => {
-		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
 		addHooks('const  = useCallback(() => {}, []);');
+
+		const positionClone = currentPosition.with(currentPosition.line, 6);
+    const  newPosition = new vscode.Selection(positionClone, positionClone);
+		
+		editor.selection = newPosition;
 
 	});
 	
 	context.subscriptions.push(addUseCallback);
 
 	const addUseImperativeHandle = vscode.commands.registerCommand('extension.useImperativeHandle', () => {
-		const editor = vscode.window.activeTextEditor;
 		if (!editor) { return; }
 
 		addHooks('useImperativeHandle( , () => {}, []);');
+
+		const positionClone = currentPosition.with(currentPosition.line, 21);
+    const  newPosition = new vscode.Selection(positionClone, positionClone);
+		
+		editor.selection = newPosition;
 
 	});
 	
