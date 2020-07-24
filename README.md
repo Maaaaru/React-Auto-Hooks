@@ -8,5 +8,8 @@
 
 ## Snippets List
 |Prefix|Snippet|
+|:--:|:--:|
 |ust|useState|
 |uff|useEffect|
+|uct|useContext|
+|urf|useRef|
