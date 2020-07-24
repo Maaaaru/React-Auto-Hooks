@@ -29,7 +29,7 @@
 				"language": "typescript",
 				"path": "./src/snippets/snippets.json"
 			}
-		],
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
