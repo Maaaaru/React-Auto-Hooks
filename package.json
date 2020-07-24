@@ -2,7 +2,8 @@
 	"name": "React-Auto-Hooks",
 	"displayName": "React-Auto-Hooks",
 	"description": "React Hooks Expansion",
-	"version": "0.0.1",
+	"author": "maaaaru",
+	"version": "1.0.0",
 	"publisher": "maaaaru",
 	"repository": {
 		"type": "git",
@@ -14,10 +15,14 @@
 	"categories": [
 		"Snippets"
 	],
-	"activationEvents": [
-		"onCommand:React-Auto-Hooks.helloWorld"
+	"keywords": [
+		"vscode",
+		"snippets",
+		"typescript",
+		"react",
+		"react native",
+		"hooks"
 	],
-	"main": "./out/extension.js",
 	"contributes": {
 		"snippets": [
 			{
@@ -25,12 +30,6 @@
 				"path": "./src/snippets/snippets.json"
 			}
 		],
-		"commands": [
-			{
-				"command": "React-Auto-Hooks.helloWorld",
-				"title": "Hello World"
-			}
-		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
