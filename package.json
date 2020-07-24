@@ -27,13 +27,21 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "typescript",
-				"path": "./src/snippets/snippets.json"
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
 			},
 			{
-				"language": "javascript",
-				"path": "./src/snippets/snippets.json"
-			}
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
 		]
 	},
 	"scripts": {
