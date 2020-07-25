@@ -33,7 +33,11 @@
 			"onCommand:extension.useReducer",
 			"onCommand:extension.useMemo",
 			"onCommand:extension.useCallback",
-			"onCommand:extension.useImperativeHandle"
+			"onCommand:extension.useImperativeHandle",
+			"onCommand:extension.arrowFunction",
+			"onCommand:extension.exportDefault",
+			"onCommand:extension.exportDefaultAs",
+			"onCommand:extension.styledComponent"
 		],
 	"contributes": {
 		"commands": [
@@ -68,6 +72,22 @@
 			{
 				"command": "extension.useImperativeHandle",
 				"title": "uih"
+			},
+			{
+				"command": "extension.arrowFunction",
+				"title": "arr"
+			},
+			{
+				"command": "extension.exportDefault",
+				"title": "exd"
+			},
+			{
+				"command": "extension.exportDefaultAs",
+				"title": "exa"
+			},
+			{
+				"command": "extension.styledComponent",
+				"title": "sty"
 			}
 		],
 		"keybindings": [
@@ -109,6 +129,26 @@
 			{
 				"command": "extension.useImperativeHandle",
 				"mac": "shift+cmd+i",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.arrowFunction",
+				"mac": "shift+cmd+w",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.exportDefault",
+				"mac": "shift+cmd+e",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.exportDefaultAs",
+				"mac": "shift+cmd+a",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "extension.styledComponent",
+				"mac": "shift+cmd+t",
 				"when": "editorTextFocus"
 			}
 		],
