@@ -25,13 +25,13 @@ only MacOS
 |umo|shift+cmd+m|useMemo|
 |ucb|shift+cmd+b|useCallback|
 |uih|shift+cmd+i|useImperativeHandle|
-|arr|coming soon...|arrow-function|
+|arr|shift+cmd+w|arrow-function|
 |ifs|coming soon...|'if' statement|
 |eli|coming soon...|'else if' statement|
 |els|coming soon...|'else' statement|
-|exd|coming soon...|'export default' statement|
-|eda|coming soon...|'export default as' statement|
-|sty|coming soon...|'styled-component' statement|
+|exd|shift+cmd+e|'export default' statement|
+|eda|shift+cmd+a|'export default as' statement|
+|sty|shift+cmd+t|'styled-component' statement|
 
 ## Example
 # -- ust or shift+cmd+u (useState)
@@ -66,28 +66,28 @@ useImperativeHandle( , () => {
 
 ```
 
-# --arr (arrow-function)
+# --arr or shift+cmd+w (arrow-function)
 
 ```
 () => {};
 
 ```
 
-# --exd (export default)
+# --exd or shift+cmd+e (export default)
 
 ```
 export default ;
 
 ```
 
-# --eda (export default as ...)
+# --eda or shift+cmd+a (export default as ...)
 
 ```
 export {default as } from '';
 
 ```
 
-# --sty (styled-component)
+# --sty or shift+cmd+t (styled-component)
 
 ```
 const Styled = style.`

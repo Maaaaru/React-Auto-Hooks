@@ -6,7 +6,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-## [1.0.1] - 2020-07-24
+## [1.2.0] - 2020-07-25
+### Added&Fixed
+-- 新たにコマンド追加
+-- CHANGELOG.mdでの誤情報修正
+
+## [1.1.0] - 2020-07-24
 ### Added
 --コマンド入力にてhooksを挿入できるように
 
