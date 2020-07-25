@@ -2,7 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-const addHooks = (val: string) => {
+const insertCode = (val: string) => {
 	const editor = vscode.window.activeTextEditor;
 
 	if (!editor) {
@@ -29,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseState = vscode.commands.registerCommand('extension.useState', () => {
 		if (!editor) { return; }
 
-		addHooks('const [,set] = useState();');
+		insertCode('const [,set] = useState();');
 
 		const positionClone = currentPosition.with(currentPosition.line, 7);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -43,7 +43,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseEffect = vscode.commands.registerCommand('extension.useEffect', () => {
 		if (!editor) { return; }
 
-		addHooks('useEffect(() => {}, []);');
+		insertCode('useEffect(() => {}, []);');
 
 		const positionClone = currentPosition.with(currentPosition.line, 17);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -58,7 +58,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseContext = vscode.commands.registerCommand('extension.useContext', () => {
 		if (!editor) { return; }
 
-		addHooks('const  = useContext();');
+		insertCode('const  = useContext();');
 
 		const positionClone = currentPosition.with(currentPosition.line, 6);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -72,7 +72,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseRef = vscode.commands.registerCommand('extension.useRef', () => {
 		if (!editor) { return; }
 
-		addHooks('const  = useRef();');
+		insertCode('const  = useRef();');
 
 		const positionClone = currentPosition.with(currentPosition.line, 6);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -88,7 +88,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseReducer = vscode.commands.registerCommand('extension.useReducer', () => {
 		if (!editor) { return; }
 
-		addHooks('const [state, dispatch] = useReducer( , );');
+		insertCode('const [state, dispatch] = useReducer( , );');
 
 		const positionClone = currentPosition.with(currentPosition.line, 7);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -102,7 +102,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseMemo = vscode.commands.registerCommand('extension.useMemo', () => {
 		if (!editor) { return; }
 
-		addHooks('const  = useMemo(() => {}, []);');
+		insertCode('const  = useMemo(() => {}, []);');
 
 		const positionClone = currentPosition.with(currentPosition.line, 6);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -116,7 +116,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseCallback = vscode.commands.registerCommand('extension.useCallback', () => {
 		if (!editor) { return; }
 
-		addHooks('const  = useCallback(() => {}, []);');
+		insertCode('const  = useCallback(() => {}, []);');
 
 		const positionClone = currentPosition.with(currentPosition.line, 6);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -130,7 +130,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseImperativeHandle = vscode.commands.registerCommand('extension.useImperativeHandle', () => {
 		if (!editor) { return; }
 
-		addHooks('useImperativeHandle( , () => {}, []);');
+		insertCode('useImperativeHandle( , () => {}, []);');
 
 		const positionClone = currentPosition.with(currentPosition.line, 21);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
