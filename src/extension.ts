@@ -29,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseState = vscode.commands.registerCommand('extension.useState', () => {
 		if (!editor) { return; }
 
-		insertCode('const [,set] = useState();');
+		insertCode("const [,set] = useState();");
 
 		const positionClone = currentPosition.with(currentPosition.line, 7);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -43,7 +43,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseEffect = vscode.commands.registerCommand('extension.useEffect', () => {
 		if (!editor) { return; }
 
-		insertCode('useEffect(() => {}, []);');
+		insertCode("useEffect(() => {}, []");
 
 		const positionClone = currentPosition.with(currentPosition.line, 17);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -58,7 +58,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseContext = vscode.commands.registerCommand('extension.useContext', () => {
 		if (!editor) { return; }
 
-		insertCode('const  = useContext();');
+		insertCode("const  = useContext();");
 
 		const positionClone = currentPosition.with(currentPosition.line, 6);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -72,7 +72,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseRef = vscode.commands.registerCommand('extension.useRef', () => {
 		if (!editor) { return; }
 
-		insertCode('const  = useRef();');
+		insertCode("const  = useRef();");
 
 		const positionClone = currentPosition.with(currentPosition.line, 6);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -88,7 +88,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseReducer = vscode.commands.registerCommand('extension.useReducer', () => {
 		if (!editor) { return; }
 
-		insertCode('const [state, dispatch] = useReducer( , );');
+		insertCode("const [state, dispatch] = useReducer( , );");
 
 		const positionClone = currentPosition.with(currentPosition.line, 7);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -102,7 +102,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseMemo = vscode.commands.registerCommand('extension.useMemo', () => {
 		if (!editor) { return; }
 
-		insertCode('const  = useMemo(() => {}, []);');
+		insertCode("const  = useMemo(() => {}, []);");
 
 		const positionClone = currentPosition.with(currentPosition.line, 6);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -116,7 +116,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseCallback = vscode.commands.registerCommand('extension.useCallback', () => {
 		if (!editor) { return; }
 
-		insertCode('const  = useCallback(() => {}, []);');
+		insertCode("const  = useCallback(() => {}, []);");
 
 		const positionClone = currentPosition.with(currentPosition.line, 6);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
@@ -130,9 +130,9 @@ export function activate(context: vscode.ExtensionContext) {
 	const addUseImperativeHandle = vscode.commands.registerCommand('extension.useImperativeHandle', () => {
 		if (!editor) { return; }
 
-		insertCode('useImperativeHandle( , () => {}, []);');
+		insertCode("useImperativeHandle( , () => {}, []);");
 
-		const positionClone = currentPosition.with(currentPosition.line, 21);
+		const positionClone = currentPosition.with(currentPosition.line, 22);
     const  newPosition = new vscode.Selection(positionClone, positionClone);
 		
 		editor.selection = newPosition;
@@ -140,6 +140,41 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 	
 	context.subscriptions.push(addUseImperativeHandle);
+
+
+	const addArrowFunction = vscode.commands.registerCommand('extension.arrowFunction', () => {
+		if (!editor) { return; }
+
+		insertCode("() => {}");
+	});
+	
+	context.subscriptions.push(addArrowFunction);
+
+	const addExportDefault = vscode.commands.registerCommand('extension.exportDefault', () => {
+		if (!editor) { return; }
+
+		insertCode("export default ;");
+	});
+	
+	context.subscriptions.push(addExportDefault);
+
+	const addExportDefaultAs = vscode.commands.registerCommand('extension.exportDefaultAs', () => {
+		if (!editor) { return; }
+
+		insertCode("export { default as } from '';");
+	});
+	
+	context.subscriptions.push(addExportDefaultAs);
+
+	const addStyledComponent = vscode.commands.registerCommand('extension.styledComponent', () => {
+		if (!editor) { return; }
+
+		insertCode("const Styled = styled.``;");
+	});
+	
+	context.subscriptions.push(addStyledComponent);
+
+
 }
 
 // this method is called when your extension is deactivated
